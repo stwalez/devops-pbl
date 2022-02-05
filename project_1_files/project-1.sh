@@ -23,7 +23,6 @@ sudo apt install mysql-server -y
 
 
 sudo mysql_secure_installation
-#Pass: HP2Cn/r3OtXkpaNi
 
 #Alternatively the following can be used -Ubuntu\Debian specific(credits: https://gist.github.com/Mins/4602864):
 sudo apt install debconf-utils
