@@ -71,7 +71,7 @@ Access the website
 
 `sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`
 
-Acces the website via public IP
+Access the website via public IP
 
 ![nginx_curl_lemp.png](screenshots/nginx_curl_lemp.png)
 
