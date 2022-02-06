@@ -25,7 +25,7 @@ Curl via Public IP
  #![alt text for screen readers](/path/to/image.png "Text to show on mouseover").
 -->
 
-### Step 2 - Install MySql
+### Step 2 - Install MySQL
 Install and access mysql
 - `sudo apt install mysql-server -y`
 - `sudo mysql_secure_installation`
