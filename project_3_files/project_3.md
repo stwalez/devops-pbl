@@ -33,8 +33,6 @@ npm install express
 
 ![express_js_install.png](screenshots/express_js_install.png)
 
-touch index.js
-
 Install the dotenv to use the environment variable and update the index.js file
 
 ```
@@ -132,6 +130,7 @@ console.log(`Server running on port ${port}`)
 });
 ```
 Ensure existing nodejs processes are terminated to avoid errors and then run node index.js
+
 You should see a "Database connected successfully" info
 ![nodejs_db_conn.png](screenshots/nodejs_db_conn.png)
 
@@ -198,6 +197,7 @@ cd components
 touch Input.js ListTodo.js Todo.js
 ```
 
+Update Input.js
 ```
 vi Input.js
 
@@ -254,6 +254,8 @@ cd ../..
 npm install axios
 cd src/components
 ```
+
+Update ListTodo.js
 ```
 vi ListTodo.js
 import React from 'react';
@@ -284,6 +286,7 @@ return (
 export default ListTodo
 ```
 
+Update Todo.js
 ```
 vi Todo.js
 import React, {Component} from 'react';
@@ -482,7 +485,7 @@ cd ../..
 
 ```
 Run the npm file
-
+```
 npm run dev
-
+```
 ![frontend_run.png](screenshots/frontend_3.png)
