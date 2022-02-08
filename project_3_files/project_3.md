@@ -11,12 +11,13 @@ Update and Upgrade Ubuntu
 - `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
 - `node -v`
 - `npm -v`
+
 ![nodejs_install.png](screenshots/nodejs_install_2.png)
 
 We would later need to update the node version to 16 to install the create react app using npx
 
 
-### Create the Todo nodejs app
+### Create the Todo node.js app
 ```
 mkdir Todo
 ls
@@ -34,10 +35,12 @@ npm install express
 
 touch index.js
 
-Install the dotenv to use the environment variable
-npm install dotenv
+Install the dotenv to use the environment variable and update the index.js file
 
+```
+npm install dotenv
 vim index.js
+```
 ![express_js_install2.png](screenshots/express_js_install2.png)
 
 Verify that site is wrapped with ExpressJS
@@ -66,7 +69,7 @@ vim todo.js
 ```
 ![models1.png](screenshots/models1.png)
 
-Update the route tables to include connection to the MongoDB model
+Update the route to include connection to the MongoDB model
 
 ![models.png](screenshots/models.png)
 
@@ -128,13 +131,8 @@ app.listen(port, () => {
 console.log(`Server running on port ${port}`)
 });
 ```
-
-node index.js
-
-You should see a Database connected successfully
-
-Ensure existing nodejs processes are terminated to avoid errors
-
+Ensure existing nodejs processes are terminated to avoid errors and then run node index.js
+You should see a "Database connected successfully" info
 ![nodejs_db_conn.png](screenshots/nodejs_db_conn.png)
 
 ### Testing Backend Code without Frontend using RESTful API
@@ -161,7 +159,7 @@ npm install concurrently --save-dev
 npm install nodemon --save-dev
 ```
 
-Edit the Todo > package.json file
+Edit the Todo > package.json > scripts section
 ```
 "scripts": {
 "start": "node index.js",
@@ -172,14 +170,21 @@ Edit the Todo > package.json file
 
 
 Configure Proxy in package.json for the React JS app
+
 ```
 cd client
 vi package.json
+```
+![package_json.png](screenshots/create_react_app_2.png)
+
+```
 npm run dev
 ```
 
-Allow Port 3000 on SG
+Allow Port 3000 on AWS Security Group
 ![sec_grp.png](screenshots/sec_grp.png)
+
+### Create the FrontEnd React Code 
 
 ```
 cd client
@@ -189,7 +194,6 @@ cd components
 ```
 
 
-### Create the FrontEnd React Code 
 ```
 touch Input.js ListTodo.js Todo.js
 ```
