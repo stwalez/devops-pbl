@@ -75,7 +75,9 @@ Update the route to include connection to the MongoDB model
 
 ### Setup MongoDB via MongoDB Cloud
 Create a MongoDB database and collection
-![models.png](screenshots/mlab_db_conn.png)
+![mongodb_cloud.png](screenshots/mlab_db_conn.png)
+
+![mongodb_cloud_2.png](screenshots/mlab_db_conn2.png)
 
 
 Create an environment variable .env
