@@ -164,7 +164,7 @@ vi script.js
     };
     });
 ```
-Create the frontEnd Index HTML Page
+Create the frontend Index HTML Page
 
 ```
 vi index.html
