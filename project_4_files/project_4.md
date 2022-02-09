@@ -228,7 +228,9 @@ cd ..
 node server.js
 ```
 
-Access the Page on the EC2 instance Public IP and Port and test run the page
+Access the Page on the EC2 instance Public IP and Port specified in the express js wrapper and test run the page
+
+Ensure the port is allowed in AWS Security Groups
 ```
 curl -s http://localhost:3300
 ```
