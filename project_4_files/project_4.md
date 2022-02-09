@@ -2,21 +2,22 @@
 
 ## MEAN Stack Implementation
 ---
-### Step 1 - Install NodeJS
+### Step 1 - Install node.js
+Update the OS
 ```
 sudo apt update
 sudo apt upgrade -y
 ```
 
-Add Certificate
+Install the required certificates
 ```
 sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 ```
 
-Install nodejs 16x version
+Install node.js 16x version
 ```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt-get install -y node.js
 ```
 ![node_version.png](screenshots/node_version.png)
 
@@ -121,7 +122,7 @@ vi book.js
 cd ../..
 mkdir public && cd public
 ```
-Create the Frontend Angular JavaScript
+Create the frontend using Angular JS
 ```
 vi script.js
 
@@ -163,7 +164,7 @@ vi script.js
     };
     });
 ```
-Create the FrontEnd Index HTML Page
+Create the frontEnd Index HTML Page
 
 ```
 vi index.html
@@ -221,7 +222,7 @@ vi index.html
 
 ```
 
-Start the Nodejs Server
+Start the node.js Server
 ```
 cd ..
 node server.js
