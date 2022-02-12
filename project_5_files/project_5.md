@@ -1,4 +1,4 @@
-# Project 1
+# Project 5
 
 ## Client-Server Architecture with MySql
 ---
@@ -31,7 +31,7 @@ The password appears to be irrelevant as the authentication type, auth.socket ra
 PASS_MYSQL_ROOT=`openssl rand -base64 12` # Save this password
 ```
 
-Set password with `debconf-set-selections` 
+Pre-seed password to mysql-server package with `debconf-set-selections` 
 ```
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password ${PASS_MYSQL_ROOT}" # new password for the MySQL root user
 
@@ -51,11 +51,11 @@ FLUSH PRIVILEGES;
 
 EOFMYSQLSECURE
 ```
-Note down this password. 
-
+Ensure password is saved
 ```
 echo -e "SUCCESS! MySQL password is: ${PASS_MYSQL_ROOT}"
 ```
+
 Verify mysql-server status
 ```
 systemctl status mysql
