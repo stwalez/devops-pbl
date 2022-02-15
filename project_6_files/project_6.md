@@ -2,7 +2,7 @@
 
 ## Web Solution with Wordpress
 ---
-### Step 1 - Prepare a Web Server
+### Step 1 - Prepare a Web server
 
 Update the server
 ```
@@ -63,7 +63,7 @@ sudo systemctl daemon-reload
 ![lvm mount](screenshots/lvm_mount.png "lvm mount")
 
 
-### Step 2 - Prepare a DBServer
+### Step 2 - Prepare a DB server
 
 Update the db server packages
 ```
@@ -103,7 +103,7 @@ df -h
 ![dbserver lvm mount](screenshots/lvm_mount_dbserver.png "dbserver lvm mount")
 
 
-### Step 3 - Install Webserver
+### Step 3 - Install a web service on the web server
 ```
 sudo yum -y update
 sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json
@@ -112,7 +112,7 @@ sudo systemctl start httpd
 ```
 Install PHP and dependencies
 
-Based on the OS Centos distro, the epel release used here was version 7 and installation is slightly different
+##### Based on the OS Centos distro, the epel release used here was version 7 and installation is slightly different
 
 ```
 wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -146,7 +146,7 @@ sudo setsebool -P httpd_can_network_connect=1
 ![selinux_http_web](screenshots/selinux_http_web.png "selinux_http_web")
 
 
-### Step 4 - Install MySql 8 on the DB Server
+### Step 4 - Install MySql 8 on the DB server
 ```
 sudo yum -y install https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
 sudo amazon-linux-extras install epel -y
@@ -178,7 +178,7 @@ SHOW DATABASES;
 exit
 ```
 
-### Step 5 - Install MySql Client on the WebServer
+### Step 5 - Install MySql Client on the Web server
 ```
 sudo yum -y install mysql
 ```
@@ -193,7 +193,7 @@ show databases;
 ```
 ![db_connfrom_web.png](screenshots/db_connfrom_web.png "db_connfrom_web.png")
 
-### Step 7 - Configure Wordpress Installation
+### Step 6 - Configure Wordpress Installation
 
 Edit the cat /var/www/html/wordpress/wp-config.php and configure the wordpress to use the mysql database
 ```
