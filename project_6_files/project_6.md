@@ -193,7 +193,7 @@ show databases;
 ```
 ![db_connfrom_web.png](screenshots/db_connfrom_web.png "db_connfrom_web.png")
 
-### Step 6 - Configure Wordpress Installation
+### Step 6 - Configure WordPress Installation
 
 Edit the cat /var/www/html/wordpress/wp-config.php and configure the wordpress to use the mysql database
 ```
