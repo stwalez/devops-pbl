@@ -35,7 +35,6 @@ mkfs -t xfs /dev/nfs-vg/lv-logs
 mkfs -t xfs /dev/nfs-vg/lv-opt
 blkid
 ```
-![lvm_mount](screenshots/lvm_mount.png)
 
 
 Set the file system to automount on startup
@@ -48,7 +47,7 @@ cat /etc/fstab
 mount -a
 df -h
 ```
-![nfs_server_fstab](screenshots/nfs_server_fstab.png)
+![lvm_mount](screenshots/lvm_mount.png)
 
 
 Install NFS on the server
