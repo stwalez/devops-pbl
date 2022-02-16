@@ -153,12 +153,12 @@ Edit the mysql connection details in the php file - /var/www/html/functions.php
 $db = mysqli_connect('172.31.15.131', 'webaccess', 'uBf5H4F@kx4tsTM', 'tooling','3306');
 ```
 
-Configure SELinux to permit httpd to use NFS 
+Configure SELinux to permit the httpd service to use NFS 
 ```
 setsebool -P httpd_use_nfs 1
 ```
 
-Configure SELinux to permit httpd to connect to /usr/sbin/php-fpm from name_connect
+Configure SELinux to permit the httpd service to connect to /usr/sbin/php-fpm from name_connect
 
 ```
 setsebool -P httpd_can_network_connect_db 1
