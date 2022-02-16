@@ -103,7 +103,7 @@ exit
 ![mysql_server](screenshots/mysql_server.png)
 
 
-### Step 3 -Launch and Install the Web Servers
+### Step 3 - Launch and Install the Web Servers
 
 Install the nfs utils to connect to the nfs server
 ```
@@ -158,7 +158,7 @@ Configure SELinux to permit the httpd service to use NFS
 setsebool -P httpd_use_nfs 1
 ```
 
-Configure SELinux to permit the httpd service to connect to /usr/sbin/php-fpm from name_connect
+Configure SELinux to permit the httpd service to utilize /usr/sbin/php-fpm service to connect to the db
 
 ```
 setsebool -P httpd_can_network_connect_db 1
