@@ -103,7 +103,9 @@ exit
 ![mysql_server](screenshots/mysql_server.png)
 
 
-### Launch and Install the Web Servers
+### Step 3 -Launch and Install the Web Servers
+
+Install the nfs utils to connect to the nfs server
 ```
 sudo hostnamectl set-hostname webserver_3
 bash
@@ -115,6 +117,7 @@ Verify connectivity to the NFS Server
 rpcinfo -p 172.31.28.63 | grep nfs
 ```
 
+Create the mount point for the nfs server
 ```
 sudo mkdir /var/www
 sudo mount -t nfs -o rw,nosuid 172.31.28.63:/mnt/apps /var/www
