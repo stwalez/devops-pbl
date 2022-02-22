@@ -2,7 +2,7 @@
 
 ## Load Balancer Solution With Apache
 
-In this project, we are utilizing the servers implemented in ![project_7](../project_7_files/project_7.md) and including a load balancer solution using Apache
+In this project, we are utilizing the servers implemented in [project_7](../project_7_files/project_7.md) and including a load balancer solution using Apache
 
 ### Step 1 - Install Apache on the load balancing Instance
 Launch a new ec2 instance and install apache
