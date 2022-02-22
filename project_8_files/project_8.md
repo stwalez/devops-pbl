@@ -2,7 +2,7 @@
 
 ## Load Balancer Solution With Apache
 
-In this project, we are utilizing the servers implemented in [project_7](../project_7_files/project_7.md) and including a load balancer solution using Apache
+In this project, we are utilizing the servers implemented in [Project_7](../project_7_files/project_7.md) and including a load balancer solution using Apache
 
 ### Step 1 - Install Apache on the load balancing Instance
 Launch a new ec2 instance and install apache
@@ -56,8 +56,7 @@ sudo mount -a
 ![log_mount_removed](screenshots/log_mount_removed.png)
 
 
-Verify that load balancing works
-Access the load balancer site
+Verify that load balancing works by accessing the load balancer site
 
 ![loadbalancer_page](screenshots/loadbalancer_page.png)
 
