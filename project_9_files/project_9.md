@@ -82,9 +82,9 @@ echo Successfully transferred
 rm -f /tmp/temp_key*
 ```
 The key file is decoded because [credential bindings variables cannot currently be passed to the Post Build Task](https://issues.jenkins.io/browse/JENKINS-32283
-), the build artefacts are transferred to the nfs server. 
+), the build artefacts are then transferred to the nfs server. 
 
-Hostchecks that may involve interactivity was disabled in the ssh script. 
+Hostchecks that may involve tty interactivity was disabled in the ssh script
 After a successful transfer, the key files are deleted
 
 
