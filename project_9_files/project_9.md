@@ -95,3 +95,6 @@ An update to the ReadMe file triggered the jenkins build
 
 and the artefacts were delivered to the NFS server
 ![webhook_delivered](screenshots/webhook_delivered.png)
+
+Log output of the Jenkins build trigger.
+![jenkins_log_output](screenshots/jenkins_log_output.png)
