@@ -172,6 +172,7 @@ export ANSIBLE_HOST_KEY_CHECKING=False
 ```
 
 Verify that the syntax on the playbook yaml is correct using ```--syntax-check```
+
 Once the syntax has been verified, run the andible playbook command
 
 ```
