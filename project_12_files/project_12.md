@@ -203,7 +203,7 @@ git push origin refactor
 
 ```
 
-Run the Ansible code
+Run the Ansible code to deploy the scripts to the UAT web servers:
 
 ```
 ansible-playbook -i /home/ubuntu/ansible-config-artifact/inventory/uat.yml /home/ubuntu/ansible-config-artifact/playbooks/site.yml
