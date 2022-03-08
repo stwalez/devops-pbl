@@ -1,7 +1,9 @@
 # Project 12
 
 ## Ansible refactoring and static assignments (imports and roles)
+In this project, Ansible static assignments were used to deploy to servers:
 
+![Project 12](screenshots/project_12.png)
 
 ### Step 1 – Jenkins job enhancement
 
