@@ -6,20 +6,25 @@
 ### Step 1 – Jenkins job enhancement
 
 Create a new directory and set appropriate permissions:
+
 ```
 sudo sudo mkdir /home/ubuntu/ansible-config-artifact
 sudo chmod -R 0777 /home/ubuntu/ansible-config-artifact
 ```
 Install Copy Artifacts Plugin
+
 ![copy_artifacts](screenshots/copy_artifacts.png)
 
-Create a new Freestyle Project and configure its job to run after the ansible jenkins job is done.
+Create a new Freestyle Project and configure its job to run after the ansible jenkins job is done:
+
 ![Configure Jenkins project](screenshots/save_artfacts_config.png)
 
-The new project will be configured to copy artifacts from the ansible jenkins utilized in [project 9](../project_9_files/project_9.md) to the created directory
+The new project will be configured to copy artifacts from the ansible jenkins utilized in [project 9](../project_9_files/project_9.md) to the created directory:
+
 ![Configure Jenkins project](screenshots/save_artfacts_config_2.png)
 
 Make a change the Github repo and verify that the new job runs:
+
 ![Jenkins job](screenshots/save_artfacts_build_output.png)
 
 
@@ -101,11 +106,13 @@ Run the ansible command using the site.yml
 export ANSIBLE_HOST_KEY_CHECKING=False
 ansible-playbook -i /home/ubuntu/ansible-config-artifact/inventory/dev.yml /home/ubuntu/ansible-config-artifact/playbooks/site.yml
 ```
+
 ![ansible run](screenshots/ansible_run.png)
 
 
 
-Verify that wireshark was removed
+Verify that wireshark was removed:
+
 ![ansible run 2](screenshots/ansible_run_2.png)
 
 
@@ -210,4 +217,5 @@ ansible-playbook -i /home/ubuntu/ansible-config-artifact/inventory/uat.yml /home
 ```
 
 Navigate to the webserver Public IP and confirm that it shows the tooling page:
+
 ![webservers deployed](screenshots/webservers_deployed.png)
