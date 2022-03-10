@@ -230,8 +230,8 @@ EOF
 
 ### Updates
 
-To successfully run the nginx and apache roles in the ansible playbook, some privilege escalation is required:
-```become: true``` was used for plays while ```ansible_become: yes``` variable was used for tasks. [See here for the bug.](https://stackoverflow.com/questions/56558841/include-tasks-does-not-work-with-become-after-upgrade-to-ansible-2-8)
+To successfully run the nginx and apache roles in the ansible playbook, privilege escalation is required:
+```become: true``` was used for plays while ```ansible_become: yes``` variable was used for tasks. [Check here for a related issue](https://stackoverflow.com/questions/56558841/include-tasks-does-not-work-with-become-after-upgrade-to-ansible-2-8).
 
 roles > apache > tasks > main.yml
 
@@ -243,7 +243,7 @@ roles > nginx > tasks > main.yml
 
 
 Amazon linux does not have its [own nginx package](https://nginx.org/packages). To accomodate amazon linux OS in nginx role, the ansible_distribution_major_version variable was set to use centos 7.
-Check [here for the issue.](https://github.com/geerlingguy/ansible-role-nginx/issues/191)
+[Check here for a logged issue](https://github.com/geerlingguy/ansible-role-nginx/issues/191).
 
 ![distro_version_change](screenshots/distro_version_change.png)
 
