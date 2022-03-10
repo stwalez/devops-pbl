@@ -91,7 +91,7 @@ Push to Github and Merge to the main branch
 Disable Github Webhook to stop Jenkins builds
 
 
-### Step 2 - Connect to Jenkins-Ansible
+### Step 2 - Connect to Jenkins-Ansible server
 As there is no need to use Jenkins build for the project, Git would be installed on the Jenkins Ansible server to easily fetch our code from the Github repo and deploy to the servers.
 
 Navigate to the ansible artifact directory where the jenkins build are copied into and pull the git directly from github
@@ -142,7 +142,7 @@ git commit -m "Commit new role files into GitHub"
 git push --set-upstream origin roles-feature
 ```
 
-### Step 3 Load Balancer Roles
+### Step 4 - Utilizing Community Roles - Load Balancer Roles
 
 Here, we will try to create a dynamic assignment such that we would be able to select a load balancer type to deploy to the server i.e nginx or apache:
 
@@ -163,7 +163,7 @@ mv geerlingguy.apache/ apache
 
 We will make use of variables as a condition to enable the preferred load balancer role:
 
-Name each variables enable_nginx_lb and enable_apache_lb respectively. Set their values to false
+Name each variables enable_nginx_lb and enable_apache_lb respectively and set their values to false:
 ```
 echo "enable_nginx_lb: false" >> nginx/defaults/main.yml 
 echo "load_balancer_is_required: false" >> nginx/defaults/main.yml 
@@ -172,8 +172,9 @@ echo "enable_apache_lb: false" >> apache/defaults/main.yml
 echo "load_balancer_is_required: false" >> apache/defaults/main.yml 
 ```
 
-Create and update loadbalancers.yml in the static-assignments with the conditions
-Here the required role is only used if the variables are both true
+Create and update loadbalancers.yml in the static-assignments with the conditions.
+
+Here the required role is only used if the variables are both true.
 
 ```
 cd ..
