@@ -261,3 +261,5 @@ Observe that the apache roles was skipped but nginx was installed
 ![ansible_run_2](screenshots/ansible_run_2.png "ansible_run_2.png")
 
 ![ansible_run_3](screenshots/ansible_run_3.png "ansible_run_3.png")
+
+[Back to top](#)
