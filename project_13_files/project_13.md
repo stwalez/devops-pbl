@@ -54,11 +54,11 @@ cat << EOF > dynamic-assignments/env-vars.yml
     - always
 EOF
 ```
-The code was updated to ensure it is a task file and not a play file, i.e it doesn't have a hosts option.
+The code was updated to ensure it is a task file and not a play file, i.e it doesn't have a "hosts" option.
 The code does the following:
 - it loops around the file contents in the env-vars directory created above based on the order set and picks the first found file (using the ```with_first_found```)
 - it first checks the inventory_file that was passed to the ansible deployment and returns its basename(without the file path). 
-- For instance, if  the inventory file we will be using with our ansible deployment command i.e ansible -i inventory_file, is /home/ubuntu/ansible-config-artifact/inventory/uat.yml, uat.yml becomes the basename. This makes the env-vars.yml dynamic in choosing the required inventory file depending on the enviroments.(```'{{ inventory_file | basename }}'```)
+- for instance, if the inventory file to be used with the ansible deployment command i.e ansible -i inventory_file, is /home/ubuntu/ansible-config-artifact/inventory/uat.yml, uat.yml becomes the basename. This makes the env-vars.yml dynamic in choosing the required inventory file depending on the enviroments.(```'{{ inventory_file | basename }}'```)
 - it then checks the content of the file and retrieves the variables set in them (``` include_vars: "{{ item }}" ```)
 
 ![env_vars.yml](screenshots/env_vars.yml.png)
