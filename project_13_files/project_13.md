@@ -242,7 +242,7 @@ roles > nginx > tasks > main.yml
 ![become_nginx](screenshots/become_nginx.png)
 
 
-Amazon linux does not have its [own nginx package](https://nginx.org/packages). To accomodate amazon linux OS in nginx role, the ansible_distribution_major_version variable was set to use centos 7.
+Amazon linux OS does not have its [own nginx package](https://nginx.org/packages). To accomodate Amazon linux OS in the nginx role, the ansible_distribution_major_version variable was set to use centos 7.
 [Check here for a logged issue](https://github.com/geerlingguy/ansible-role-nginx/issues/191).
 
 ![distro_version_change](screenshots/distro_version_change.png)
