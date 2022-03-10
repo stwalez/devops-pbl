@@ -17,12 +17,10 @@ Take note that in most cases it is recommended to use static assignments for pla
 
 
 ### Step 1 - Introducing Dynamic Assignments into our structure
-```
-git checkout -b dynamic-assignments
-```
 
 Create a new folder, name it dynamic-assignments. Then inside this folder, create env-vars.yml file
 ```
+git checkout -b dynamic-assignments
 mkdir dynamic-assignments
 touch dynamic-assignments/env-vars.yml
 ```
