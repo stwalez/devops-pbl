@@ -220,7 +220,7 @@ playbooks/site.yml should have the following content:
 
 To activate load balancer, and enable nginx by setting these in the respective environment’s env-vars file.
 ```
-cat << EOF > env-vars\uat.yml
+cat << EOF > env-vars/uat.yml
 enable_nginx_lb: true
 load_balancer_is_required: true
 
