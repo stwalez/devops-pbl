@@ -218,6 +218,9 @@ playbooks/site.yml should have the following content:
 ![site.yml](screenshots/site_yml.png)
 
 
+Update the inventory/uat.yml with the target server details:
+![inventory_uat.yml](screenshots/inventory_uat.png)
+
 To activate load balancer, and enable nginx by setting these in the respective environment’s env-vars file.
 ```
 cat << EOF > env-vars/uat.yml
