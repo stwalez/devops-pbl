@@ -628,7 +628,7 @@ mv lrk.sonarqube sonarqube
 
 ![SonarQube Playbook](screenshots/sonarqube_playbook.png)
 
-The following steps were already configured in the roles to minimize manual installation. Although it is written here for informational purposes
+The following steps were already configured in the [roles](https://github.com/stwalez/ansible-config-mgt/tree/main/roles/) to minimize manual installation. However, it is documented here for informational purposes:
   - Tune Linux Kernel
   - Update system packages and Install Java and other required packages
   - Install and Setup PostgreSQL 10 Database for SonarQube
