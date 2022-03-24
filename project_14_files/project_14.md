@@ -912,7 +912,7 @@ Configure SonarQube and Jenkins for Quality Gate
   sonar.php.tests.reportPath=reports/unitreport.xml
   ```
   
-  **Blocker:** the sonar.php.exclusions was modified to sonar.exclusions as sonar.php.exlusions is depreciated. 
+  **Blocker:** the sonar.php.exclusions was modified to sonar.exclusions as sonar.php.exlusions doesn't seem to exclude the vendors file.
                 sonar.sources=. was included due to errors thrown while building the source codes.
 
 - Navigate to your php-todo dashboard on SonarQube UI ![](screenshots/sonar_page)
