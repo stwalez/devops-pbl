@@ -957,7 +957,9 @@ Conditionally Deploy to Higher Environments
 Configure Jenkins slave servers
 
 ---
-- Spin up two new EC2 Instance. Ubuntu OS was used in this case
+- Spin up two new EC2 Instance. Ubuntu OS was used in this case:
+  ![](screenshots/Jenkins_slaves.png)
+  
   - Install Java and Ansible using ansible roles
   ![](screenshots/jenkins_slaves_install.png)
 
