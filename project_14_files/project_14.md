@@ -948,7 +948,8 @@ Conditionally Deploy to Higher Environments
   ```
   You should get the following when you run the pipeline:
   ![](screenshots/main_pipeline.png)
-  For specific branches (Quality Gate does not execute I am running from 'new-features' branch):
+  
+  Quality gate does not execute for specific branches based on the when condition ('new-features' branch):
   ![](screenshots/different_branch_build.png)
 
 
