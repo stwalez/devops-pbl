@@ -972,7 +972,7 @@ Configure Jenkins slave servers
   - Ensure that a label was set in the configuration above. This would help in random assignments to the agents.
   - Set 'Host' value as the IP of the slave node
   - For Launch Method, select Launch Agents via SSH
-  - Add  SSH with username and private key credentials with username as jenkins and private key as the private key you copied from the node
+  - Add  SSH with username and private key credentials with username and private key of the ec2 servers
   - For Host Key Verification Strategy, select Manually trusted key validation strategy
   - Click Save
     ![](screenshots/cia_agent.png)
