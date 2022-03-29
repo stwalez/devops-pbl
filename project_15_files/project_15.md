@@ -36,7 +36,7 @@ Validate the DNS for ACM.
 - Navigate to Route53 and create the CNAME record provided:
   ![](screenshots/acm_route53_dns_prop.png)
 
-- As soon as the dns record propagates, refresh on the ACM to confirm that the certificate has been issued:
+- As soon as the DNS record propagates, refresh the ACM WebPage to verify that the certificate has been issued:
   ![](screenshots/acm_dns_validated.png)
 
 
@@ -384,6 +384,9 @@ Setup Nginx Launch Template
 - This is such that all traffic directed from the external ALB to the nginx servers will be proxied to the internal ALB.
 - Launch an Instance from the Launch Template and verify that all configurations are reflected
 
+ - All launch templates should be as shown: 
+  ![](screenshots/launch_templates.png)
+
 - Create a Target Group for Nginx.
   - Ensure HTTPS protocol 443 for Nginx
   - Set the healthcheck path as "/healthstatus"
@@ -394,6 +397,7 @@ Setup Nginx Launch Template
   ![](screenshots/target_groups.png)
 
 - Create an Automatic Scaling group and select desired capacity the matching launch template and target groups for Nginx.
+
 - All ASGs should be as shown below:
   ![](screenshots/asgs.png)
 
