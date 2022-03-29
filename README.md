@@ -28,6 +28,7 @@
 
 - Project 14 - [Experience Continuous Integration With Jenkins | Ansible | Artifactory | Sonarqube | PHP](project_14_files/project_14.md)
 
+- Project 15 - [AWS Cloud Solution for 2 Company Websites Using A Reverse Proxy Technology](project_15_files/project_15.md)
 
 ---
 
