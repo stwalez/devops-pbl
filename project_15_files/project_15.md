@@ -350,6 +350,7 @@ Setup Nginx Launch Template
   - Sets the selinux to allow the webserver access and utilize nfs
   - Clones a github repo to retrieve the preconfigured self signed ssl requests configuration file
   - Creates a required directory to input the self signed key
+  - Creates a self signed key with the configuration file
   - Modifies the the nginx.conf to include setting for the reverse proxy configuration
   - Change the SELinux content of the new nginx.conf file
   - Create a new directory on the /var/www/html and inserts the healthstatus check page
