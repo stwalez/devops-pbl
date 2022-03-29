@@ -384,7 +384,7 @@ Setup Nginx Launch Template
 - This is such that all traffic directed from the external ALB to the nginx servers will be proxied to the internal ALB.
 - Launch an Instance from the Launch Template and verify that all configurations are reflected
 
- - All launch templates should be as shown: 
+- All launch templates should be as shown: 
   ![](screenshots/launch_templates.png)
 
 - Create a Target Group for Nginx.
