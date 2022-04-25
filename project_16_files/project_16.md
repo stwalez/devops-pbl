@@ -181,10 +181,10 @@ resource "aws_subnet" "public" {
 
 - The first section of the count value points to the tfvars, to see how many subnets are needed and check if its null. 
 
-- If it is null use the number of availability zones in that region.
+- If it is null, use the number of availability zones in that region.
   ![](./screenshots/variable_subnet_null.png)
 
-- If it is not null use the preferred amount stated in .tfvar
+- If it is not null, use the preferred amount stated in .tfvar
   ![](./screenshots/variable_subnet_2.png)
 
 
