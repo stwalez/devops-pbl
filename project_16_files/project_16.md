@@ -63,6 +63,7 @@ According to our architectural design, we require 6 subnets:
 2 public subnets
 2 private subnets for webservers
 2 private subnets for data layer
+
 Add below configuration to the main.tf file:
 
 ```
@@ -181,10 +182,10 @@ resource "aws_subnet" "public" {
 - The first section of the count value points to the tfvars, to see how many subnets are needed and check if its null. 
 
 - If it is null use the number of availability zones in that region.
-- ![](./screenshots/variable_subnet_null.png)
+  ![](./screenshots/variable_subnet_null.png)
 
 - If it is not null use the preferred amount stated in .tfvar
-- ![](./screenshots/variable_subnet_2.png)
+  ![](./screenshots/variable_subnet_2.png)
 
 
 The essesnce of creating all this files is to ensure that we do not hard code values which give room for re-usability.
