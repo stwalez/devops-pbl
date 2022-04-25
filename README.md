@@ -30,6 +30,8 @@
 
 - Project 15 - [AWS Cloud Solution for 2 Company Websites Using A Reverse Proxy Technology](project_15_files/project_15.md)
 
+- Project 16 - [Automate Infrastructure With Iac Using Terraform Part 1](project_16_files/project_16.md)
+
 ---
 
 - Aux Project 1 - [Shell script to create linux users with initialized ssh profiles](https://github.com/stwalez/auxillary-projects)
