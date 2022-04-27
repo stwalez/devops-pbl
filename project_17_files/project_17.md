@@ -1201,7 +1201,7 @@ Create RDS using *rds.tf* for database.
 - A NAT (Network Address Translation) Gateway is a device attached to a private subnet that allows instances in that subnet to connect to services outside a VPC but does not allow external services to initiate connection with those instances over the internet.
 
 ### 2. OSI Model and TCP/IP Suite
-The OSI model is a conceptual framework used to describe the fnnctoons of a telecommunication or networking system while The TCP/IP model describes a suite of communication protocols used to interconnect network devices on the internet.
+The OSI model is a conceptual framework used to describe the functions of a telecommunication or networking system while The TCP/IP model describes a suite of communication protocols used to interconnect network devices on the internet.
 
 ### 3. Assume Role Policy and Role Policy
 Assume role grants the principal declared in the role temporary security keys to access AWS resources while the role policy defines the permissions granted to the user or role the policy is attached to.
