@@ -32,6 +32,9 @@
 
 - Project 16 - [Automate Infrastructure With Iac Using Terraform Part 1](project_16_files/project_16.md)
 
+- Project 17 - [Automate Infrastructure With Iac Using Terraform Part 2](project_17_files/project_17.md)
+
+
 ---
 
 - Aux Project 1 - [Shell script to create linux users with initialized ssh profiles](https://github.com/stwalez/auxillary-projects)
