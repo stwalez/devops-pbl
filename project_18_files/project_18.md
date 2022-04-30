@@ -3,9 +3,7 @@
 
 ## Automate Infrastructure With Iac Using Terraform Part 3 - Refactoring
 
-This is a continuation of [Project 17](../project_17_files/project_17.md).
-
-
+This is a continuation of [Project 18](../project_18_files/project_18.md).
 
 
 ### Setup AWS S3 Backend

@@ -35,7 +35,7 @@
 - Project 17 - [Automate Infrastructure With Iac Using Terraform Part 2](project_17_files/project_17.md)
 
 
-- Project 18 - [Automate Infrastructure With Iac Using Terraform Part 2](project_18_files/project_18.md)
+- Project 18 - [Automate Infrastructure With Iac Using Terraform Part 3 - Refactoring](project_18_files/project_18.md)
 
 ---
 
