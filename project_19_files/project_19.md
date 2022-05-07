@@ -202,7 +202,7 @@ Let us explore how we can migrate our codes to Terraform Cloud and manage our AW
     ![](screenshots/task2_download_module_config.png)
 
 - Create a workspace for the configuration
-  - Create a github repo and input the downloaded module (main.tf file).
+  - Create a [github repo](https://github.com/stwalez/pbl_p19_t2) and input the downloaded module (main.tf file).
   - Add github repo to a new workspace
   - Trigger a plan to see that the module works
     ![](screenshots/task2_apply_module_plan.png)
