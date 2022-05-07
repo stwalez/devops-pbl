@@ -37,6 +37,9 @@
 
 - Project 18 - [Automate Infrastructure With Iac Using Terraform Part 3 - Refactoring](project_18_files/project_18.md)
 
+- Project 19 - [Automate Infrastructure With Iac Using Terraform Part 4 - Terraform Cloud](project_19_files/project_19.md)
+
+
 ---
 
 - Aux Project 1 - [Shell script to create linux users with initialized ssh profiles](https://github.com/stwalez/auxillary-projects)
