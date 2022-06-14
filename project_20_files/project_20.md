@@ -93,64 +93,66 @@ docker run --network tooling_app_network --name mysql-client -it --rm mysql mysq
 ```
 
 ### Using the Tooling Application to connect to the database
-Prepare the database schema
+- Prepare the database schema
 
-git clone https://github.com/darey-devops/tooling.git
+  ```
+  git clone https://github.com/darey-devops/tooling.git
+  ```
+- On your terminal, export the location of the SQL file
+  ```
+  export tooling_db_schema=/home/ubuntu/tooling/html/tooling_db_schema.sql
+  export MYSQL_PW=a_secret_p1
+  docker exec -i mysql-server mysql -u root -p$MYSQL_PW < $tooling_db_schema 
+  ```
+- Verify that the tooling db was created
 
-On your terminal, export the location of the SQL file
-```
-export tooling_db_schema=/home/ubuntu/tooling/html/tooling_db_schema.sql
-export MYSQL_PW=a_secret_p1
-docker exec -i mysql-server mysql -u root -p$MYSQL_PW < $tooling_db_schema 
-```
-Verify that the tooling db was created
-![](screenshots/toolingdb_on_docker.png)
-
-
-
-Update the .env file with connection details to the database
-
-```
-
-cat tooling/html/.env
-# input your environment variables
-MYSQL_IP=mysqlserverhost
-MYSQL_USER=user
-MYSQL_PASS=password
-MYSQL_DBNAME=toolingdb
-```
-
-Create the dockerfile
-
-```
-FROM php:7-apache
-MAINTAINER Dare dare@zooto.io
-
-RUN docker-php-ext-install mysqli
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
-COPY start-apache /usr/local/bin
-RUN a2enmod rewrite
-
-# Copy application source
-COPY html /var/www
-RUN chown -R www-data:www-data /var/www
-
-CMD ["start-apache"]
-```
-Build the docker image
-```
-docker build -t tooling:0.0.1 . 
-```
-![](screenshots/dockerfile_build.png)
+  ![](screenshots/toolingdb_on_docker.png)
 
 
-Run the docker container from the image
-```
-docker run --network tooling_app_network -p 8085:80 -it -d tooling:0.0.1 
-```
-![](screenshots/toolingdb_site_login.png)
+
+- Update the .env file with connection details to the database
+
+  ```
+
+  cat tooling/html/.env
+  # input your environment variables
+  MYSQL_IP=mysqlserverhost
+  MYSQL_USER=user
+  MYSQL_PASS=password
+  MYSQL_DBNAME=toolingdb
+  ```
+
+- Create the dockerfile
+
+  ```
+  FROM php:7-apache
+  MAINTAINER Dare dare@zooto.io
+
+  RUN docker-php-ext-install mysqli
+  RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+  RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
+  COPY start-apache /usr/local/bin
+  RUN a2enmod rewrite
+
+  # Copy application source
+  COPY html /var/www
+  RUN chown -R www-data:www-data /var/www
+
+  CMD ["start-apache"]
+  ```
+  Build the docker image
+  ```
+  docker build -t tooling:0.0.1 . 
+  ```
+  ![](screenshots/dockerfile_build.png)
+
+
+- Run the docker container from the image
+  ```
+  docker run --network tooling_app_network -p 8085:80 -it -d tooling:0.0.1 
+  ```
+  ![](screenshots/toolingdb_site_login.png)
 
 
 
