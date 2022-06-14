@@ -39,6 +39,9 @@
 
 - Project 19 - [Automate Infrastructure With Iac Using Terraform Part 4 - Terraform Cloud](project_19_files/project_19.md)
 
+- Project 20 - [Migration to the Cloud with Containerization. Part 1 - Docker & Docker Compose](project_20_files/project_20.md)
+
+
 
 ---
 
