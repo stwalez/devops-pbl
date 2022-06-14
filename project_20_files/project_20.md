@@ -403,6 +403,7 @@ MYSQL_DBNAME=toolingdb
 ```
 
 Write the docker compose definitions in the tooling.yaml
+
 Ensure hostname and mysql parameters match the tooling/html/.env file in t
 ```
 cd tooling
